@@ -4,3 +4,4 @@ CONTRIBUTING.md
 *.pdf
 LICENSE
 NOTICE
+venv/
