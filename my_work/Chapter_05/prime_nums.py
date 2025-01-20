@@ -1,4 +1,4 @@
-# Challenge for Chapter 4 of the Python Essentials Training Course on LinkedIn Learning
+# Challenge for Chapter 5 of the Python Essentials Training Course on LinkedIn Learning
 # Create a function that calculates all primes up to a given number. 
 # The goal is to increase efficiency by only dividing by known prime numbers.
 
