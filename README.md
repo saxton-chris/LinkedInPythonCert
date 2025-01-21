@@ -63,4 +63,4 @@ The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/mai
 ## CHAPTER 8 - Errors
 This chapter covered `Errors` and `Exceptions`. In Python `Errors` and `Excpetions` are essentially the same thing. The course went over what `Errors` and `Exceptions` are. Then we covered different ways to handle the exceptions. It was noted to put the most generic `Exception` last so that if a specific `Exception` is raised it will be caught by the code to send the correct message to users. Finally, we learned about creating custom `Exceptions`.
 
-
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_08) was to create a custom `Exception` to handle arguments that aren't integers. It uses a decorator to check that all parameters are integers. If any parameter isn't an integer then it raises a `NotIntArgumentException`.
