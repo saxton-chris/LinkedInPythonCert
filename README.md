@@ -2,7 +2,27 @@
 
 This is my notes and process for completing the LinkedIn Learning learning path [OpenEDG Python Institute: Programming with Python Professional Certificate](https://www.linkedin.com/learning/paths/openedg-python-institute-programming-with-python-professional-certificate). There will be sections for each course in the learning path and an overall review once I have completed everything.
 
-## Python Essential Training
+## Table of Contents
+* [Python Essential Training](#python-essential-training)
+    * [CHAPTER 1 - Gearing Up for Python](#chapter-1---gearing-up-for-python)
+    * [CHAPTER 2 - Quickstart](#chapter-2---quickstart)
+    * [CHAPTER 3 - Basic Data Types](#chapter-3---basic-data-types)
+    * [CHAPTER 4 - Basic Data Structures](#chapter-4---basic-data-structures)
+    * [CHAPTER 5 - Control Flow](#chapter-5---control-flow)
+    * [CHAPTER 6 - Functions](#chapter-6---functions)
+    * [CHAPTER 7 - Classes and Object](#chapter-7---classes-and-objects)
+    * [CHAPTER 8 - Errors](#chapter-8---errors)
+    * [CHAPTER 9 - Threads and Processes](#chapter-9---threads-and-process)
+    * [CHAPTER 10 - Working with Files](#chapter-10---working-with-files)
+    * [CHAPTER 11 - Packaging Python](#chapter-11---packaging-python)
+* [Python Object-Oriented Progamming](#python-object-oriented-programming)
+    * [INTRODUCTION](#introduction)
+    * [CHAPTER 1 - Object-Oriented Programming](#chapter-1---object-oriented-python)
+    * CHAPTER 2 - Inheritance and Composition
+    * CHAPTER 3 - "Magic" Object Methods
+    * CHAPTER 4 - Data Classes
+
+## Python Essential Training <a name="essentials"></a>
 This is my repository for the LinkedIn Learning course `Python Essential Training`. The full course is available from [LinkedIn Learning][lil-course-url]. I will be committing my projects and code samples from the course to this repository.
 
 ![Python Essential Training][lil-thumbnail-url] 
@@ -18,7 +38,7 @@ Senior Software Engineer
 [lil-course-url]: https://www.linkedin.com/learning/](https://www.linkedin.com/learning/python-essential-training-18764650/
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/C4E0DAQHBQo3TSa3IUg/learning-public-crop_675_1200/0/1674513192001?e=2147483647&v=beta&t=YWS_o8SlM4I6YEzJwQnAIP8Q0kfvzX3QbqA7Avrg7K8
 
-### CHAPTER 1 - Gearing Up for Python
+### CHAPTER 1 - Gearing Up for Python <a name="es_chapter1"></a>
 This was just an introductory and setup chapter. Walked through what Python is and how to install Python, Pip, and Jupyter.
 
 Was then given a breif over view of Jupyter and Python and given stepwise instructions on how to create a `hello world` program
@@ -54,7 +74,7 @@ This chapter focused on the basics of control flow types. Control flows you to e
 
 The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_05) for this chapter was to create a function to find prime numbers. The goal was to make the process more efficient but storing a list of known primes so the program could compare only against prime numbers up to the square root of the potential primee instead of dividing by every number up to the square root.
 
-### CHATPER 6 - Functions
+### CHAPTER 6 - Functions
 This chapter was all about functions. Topics discussed were the purpose and intent of functions, how to define and write them, variables and defining the scope of variables, and finally using functions as variables.
 
 The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_06) was to calculate the square of a number using the triangle sum of the number. The square of a number is equal to `triangle(num) + triangle(num -1)`. This was a quick and straigh forward project focused on declaring functions and calling them recursively as needed.
@@ -69,13 +89,13 @@ This chapter covered `Errors` and `Exceptions`. In Python `Errors` and `Excpetio
 
 The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_08) was to create a custom `Exception` to handle arguments that aren't integers. It uses a decorator to check that all parameters are integers. If any parameter isn't an integer then it raises a `NotIntArgumentException`.
 
-### CHAPTER 9
+### CHAPTER 9 - Threads and Process
 
-### CHAPTER 10
+### CHAPTER 10 - Working with Files
 
-### CHAPTER 11
+### CHAPTER 11 - Packaging Python
 
-## Python Object-Oriented Programming
+## Python Object-Oriented Programming <a name="py_oop"></a>
 This is the repository for the LinkedIn Learning course Python Object-Oriented Programming. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Python Object-Oriented Programming][lil-thumbnail-url] 
@@ -108,3 +128,9 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/python-object-oriented-programming-22888296?dApp=59033956&leis=LAA
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQGmlDAUUSloow/learning-public-crop_675_1200/0/1697645724849?e=2147483647&v=beta&t=Ws35uIg4NrNGWXqHuaX4LoGzK4DvrQjZu5Q6QJQ_SqM
+
+### INTRODUCTION
+Just a quick introduction section. It gave recommended course to take to become familiar with Python and OOP. It then had a quick tutorial on how to set up CodeSpaces on GitHub
+
+### CHAPTER 1 - Object-Oriented Python
+
