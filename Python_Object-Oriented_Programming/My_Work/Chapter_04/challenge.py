@@ -4,17 +4,33 @@
 # Challenge: convert your classes to dataclasses
 # The subclasses are required to override the magic method
 # that makes them sortable
+from abc import ABC, abstractmethod
+from dataclasses import dataclass
 
-class Asset():
-    pass
-    
+@dataclass
+class Asset(ABC):
+    price: float
 
+    @abstractmethod
+    def __lt__(self, value):
+       pass    
+
+@dataclass
 class Stock(Asset):
-    pass
+    ticker: str
+    company: str
 
+    def __lt__(self, value):
+       return self.price < value.price
 
+@dataclass
 class Bond(Asset):
-    pass
+    description: str
+    duration: int
+    yieldamnt: float
+
+    def __lt__(self, value):
+       return self.yieldamnt < value.yieldamnt
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 stocks = [
