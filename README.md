@@ -19,7 +19,7 @@ This is my notes and process for completing the LinkedIn Learning learning path 
     * [INTRODUCTION](#introduction)
     * [CHAPTER 1 - Object-Oriented Programming](#chapter-1---object-oriented-python)
     * [CHAPTER 2 - Inheritance and Composition](#chapter-2---inheritance-and-compositions)
-    * [CHAPTER 3 - "Magic" Object Methods]
+    * [CHAPTER 3 - "Magic" Object Methods](#chapter-3---magic-object-method)
     * [CHAPTER 4 - Data Classes]
 
 ## Python Essential Training <a name="essentials"></a>
