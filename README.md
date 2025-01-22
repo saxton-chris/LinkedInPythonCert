@@ -46,12 +46,12 @@ Was then given a breif over view of Jupyter and Python and given stepwise instru
 ### CHAPTER 2 - Quickstart
 This chapter covered the fundamentals of coding in Python. It covered topics of variables, data structures, and operators. It then when over the basic of control flow using if/else statements and loops. The section ended with a very quick over view of fuinctions and classes that will be build on in later chapters.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_02) was to write a robust function to calculate factorials without using the build in `math.factorial()` function. 
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_02) was to write a robust function to calculate factorials without using the build in `math.factorial()` function. 
 
 ### CHAPTER 3 - Basic Data Types
 This chapter covered the basic data structures of Python. This included `int`, `float`, `bool`, `string`, and `byte`.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_03) for this chapter was to create a function that convereted hex numbers to decimal. The goal was to only support at most a 3 digit hex number, but I wrote my code in a way to be robust enough to handle any length. It includes checks to make sure the input is a valid hex number before attemtping to conver to decimal.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_03) for this chapter was to create a function that convereted hex numbers to decimal. The goal was to only support at most a 3 digit hex number, but I wrote my code in a way to be robust enough to handle any length. It includes checks to make sure the input is a valid hex number before attemtping to conver to decimal.
 
 ### CHAPTER 4 - Basic Data Structures
 This chatper is an intro to the basic data structures in Python
@@ -63,7 +63,7 @@ This chatper is an intro to the basic data structures in Python
 
 The chapter concluded with going over the basics of list and dictionary comprehensions.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_04) for this chapter was to encode and decode ASCII art. Given a string, the `encode(string)` function returned a list of tuples using run-length encoding. Given a list of tuples, the `decode(list)` function returned a string that could then be printed out.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_04) for this chapter was to encode and decode ASCII art. Given a string, the `encode(string)` function returned a list of tuples using run-length encoding. Given a list of tuples, the `decode(list)` function returned a string that could then be printed out.
 
 ### CHAPTER 5 - Control Flow
 This chapter focused on the basics of control flow types. Control flows you to execute certain parts of the code and skip others or repeate the same secion of code multiple times.
@@ -72,22 +72,22 @@ This chapter focused on the basics of control flow types. Control flows you to e
 * **for loop** - Repeat a piece of code a prescribed number of times. This is used when you need to do the same thing multiple times and more cleanly allows this to happen without writing the same code over and over. A `for` loop is used to iterate over a sequence of objects
 * **while loop** - A while loop, like a for loop, will repeat the same code multiple times. It will iterate until a condition is met. It is used when you don't know how many iterations you need in advance.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_05) for this chapter was to create a function to find prime numbers. The goal was to make the process more efficient but storing a list of known primes so the program could compare only against prime numbers up to the square root of the potential primee instead of dividing by every number up to the square root.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_05) for this chapter was to create a function to find prime numbers. The goal was to make the process more efficient but storing a list of known primes so the program could compare only against prime numbers up to the square root of the potential primee instead of dividing by every number up to the square root.
 
 ### CHAPTER 6 - Functions
 This chapter was all about functions. Topics discussed were the purpose and intent of functions, how to define and write them, variables and defining the scope of variables, and finally using functions as variables.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_06) was to calculate the square of a number using the triangle sum of the number. The square of a number is equal to `triangle(num) + triangle(num -1)`. This was a quick and straigh forward project focused on declaring functions and calling them recursively as needed.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_06) was to calculate the square of a number using the triangle sum of the number. The square of a number is equal to `triangle(num) + triangle(num -1)`. This was a quick and straigh forward project focused on declaring functions and calling them recursively as needed.
 
 ### CHAPTER 7 - Classes and Objects
 This chapter was all about classes and an introduction to object oriented programming. Topics discussed were what are classes, static and instance methods, and inheritance.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_07) was to complete a `Triangle` class that was a child of a predefined `Shape` class. The goal was to have it print a triangle shape with the character #.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_07) was to complete a `Triangle` class that was a child of a predefined `Shape` class. The goal was to have it print a triangle shape with the character #.
 
 ### CHAPTER 8 - Errors
 This chapter covered `Errors` and `Exceptions`. In Python `Errors` and `Excpetions` are essentially the same thing. The course went over what `Errors` and `Exceptions` are. Then we covered different ways to handle the exceptions. It was noted to put the most generic `Exception` last so that if a specific `Exception` is raised it will be caught by the code to send the correct message to users. Finally, we learned about creating custom `Exceptions`.
 
-The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/my_work/Chapter_08) was to create a custom `Exception` to handle arguments that aren't integers. It uses a decorator to check that all parameters are integers. If any parameter isn't an integer then it raises a `NotIntArgumentException`.
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_08) was to create a custom `Exception` to handle arguments that aren't integers. It uses a decorator to check that all parameters are integers. If any parameter isn't an integer then it raises a `NotIntArgumentException`.
 
 ### CHAPTER 9 - Threads and Process
 
@@ -133,4 +133,18 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 Just a quick introduction section. It gave recommended course to take to become familiar with Python and OOP. It then had a quick tutorial on how to set up CodeSpaces on GitHub
 
 ### CHAPTER 1 - Object-Oriented Python
+This chapter goes over the basics of OOP. Python does not requier the use of objects and classes, but complexity of code leads to using OOP to make things easier to read. OOP allows for modular program and isolates different parts of the program from each other.
 
+Some of the key terms that were reviewed are
+* *Class* - This is essentially a blue print used for creating objects of a certain type
+* *Methods* - These are functions within a class
+* *Attributes* - These are variables within a class
+* *Object* - A particular instance of a class
+* *Inheritance* - This is how a class draws some functionality from a parent class
+* *Composition* - Building complex objects out of other objects
+
+After this high-level overview the instructor walked us through some practice creating classes and instances of those classes. We also learned how to check the type of an object of if that object is an instance of a particular class. Finally, it was wrapped up by going over the differences between instance, class, and static methods and attributes.
+
+The final task was a [challenge coding "project"](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_01) implementing a `Stock` class that stores some basic information on stocks and contains a singular method, `get_description()` and prints out all the stored attributes in a formatted string.
+
+### CHAPTER 2 - Inheritance and Composition
