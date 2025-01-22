@@ -18,9 +18,9 @@ This is my notes and process for completing the LinkedIn Learning learning path 
 * [Python Object-Oriented Progamming](#python-object-oriented-programming)
     * [INTRODUCTION](#introduction)
     * [CHAPTER 1 - Object-Oriented Programming](#chapter-1---object-oriented-python)
-    * CHAPTER 2 - Inheritance and Composition
-    * CHAPTER 3 - "Magic" Object Methods
-    * CHAPTER 4 - Data Classes
+    * [CHAPTER 2 - Inheritance and Composition](#chapter-2---inheritance-and-compositions)
+    * [CHAPTER 3 - "Magic" Object Methods]
+    * [CHAPTER 4 - Data Classes]
 
 ## Python Essential Training <a name="essentials"></a>
 This is my repository for the LinkedIn Learning course `Python Essential Training`. The full course is available from [LinkedIn Learning][lil-course-url]. I will be committing my projects and code samples from the course to this repository.
@@ -98,8 +98,6 @@ The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/mai
 ## Python Object-Oriented Programming <a name="py_oop"></a>
 This is the repository for the LinkedIn Learning course Python Object-Oriented Programming. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![Python Object-Oriented Programming][lil-thumbnail-url] 
-
 The object-oriented programming (OOP) features in Python make it easier to build programs of increasing complexity and modularity. In this course with instructor Joe Marini, learn how to apply core OOP principles to build programs that are extensible and efficient. Joe starts with the basics of defining and using classes and objects. Then he moves into more advanced features like abstract base classes and how to implement interfaces. He also details some of the more unique features of Python, like magic class methods to make your classes integrate tightly with the Python language and data classes to dramatically reduce the amount of boilerplate code needed to build data-centric objects.
 
 ### Instructions
@@ -127,7 +125,6 @@ Senior Director of Product and Engineering
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/joe-marini).
 
 [lil-course-url]: https://www.linkedin.com/learning/python-object-oriented-programming-22888296?dApp=59033956&leis=LAA
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQGmlDAUUSloow/learning-public-crop_675_1200/0/1697645724849?e=2147483647&v=beta&t=Ws35uIg4NrNGWXqHuaX4LoGzK4DvrQjZu5Q6QJQ_SqM
 
 ### INTRODUCTION
 Just a quick introduction section. It gave recommended course to take to become familiar with Python and OOP. It then had a quick tutorial on how to set up CodeSpaces on GitHub
@@ -145,6 +142,9 @@ Some of the key terms that were reviewed are
 
 After this high-level overview the instructor walked us through some practice creating classes and instances of those classes. We also learned how to check the type of an object of if that object is an instance of a particular class. Finally, it was wrapped up by going over the differences between instance, class, and static methods and attributes.
 
-The final task was a [challenge coding "project"](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_01) implementing a `Stock` class that stores some basic information on stocks and contains a singular method, `get_description()` and prints out all the stored attributes in a formatted string.
+The final task was a [coding challenge](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_01) implementing a `Stock` class that stores some basic information on stocks and contains a singular method, `get_description()` and prints out all the stored attributes in a formatted string.
 
 ### CHAPTER 2 - Inheritance and Composition
+This chapter was all about inheritance and composition in Python. The first thing that was dicussed was basic inheritance and nested inheritance. We create a `Book` class that inherited from a `Publication` class, as well as `Magazine` and `Newpaper` classes which inherited from `Periodical` which in turn inherited from `Publication`. From there we learned about abstraction and using the `abc` package to mark classes as abstract classes anduse `@abstractmethod` to declare abstrac methods in the class. This also tied into a following section on interfaces and how they can be used among many different types of class whether they are related or not. The chapter also went over the concept of multiple inheritance and why order of classes matter when listing which classes a new class inherits from. The final topic was on composition. This is the concept of passing in instances of one class into another class. An example is having a `Book` class that is passed an `Author` class because a book **has** an author. The major distiction between the two is that a for inheritance it is an *is* relationship (a `Book` *is* a `Publication`) and composition is an *has* relationship (a `Book` *has* an `Author`).
+
+The [coding challenge](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_01) for this chapter was to expand on the stock example from chatper 1. We wrote an abstract `Asset` class that both `Stock` and `Bond` inherited from. Since both have a `price` the `Asset` class set that for both. Then both implemented the abstract method `get_description()` to print out a description of each.
