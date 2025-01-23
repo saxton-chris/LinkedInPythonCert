@@ -177,3 +177,8 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/level-up-python
 
+### CHALLENGE 1 - Prime Factorization
+The first coding challenge was to create a function to find the (prime factors)[https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Level_Up_Python/my_work/01_Find_Prime_Factors] of a given number. My solution for this started by trying to divide by 2 as that is the lowest prime number. Once I divided by 2 as many times as I could, then I tried divding by 3, as that is the next prime number. From there, I incrimented the divisor by 2 as I only needed to test odd numbers, up to the square root of the most current value of the reduced number. I also included a couple of safety checks before trying to find prime factors. If the input parameter was not a integer I return a warning message letting the user know that an integer is required. Also, if the number is less than 2, then I am returning an empty list as the number can't have any prime factors. The final check was to see is `num > 1` after the loop finishes executing. If so, that number is prime and must be added to the list. This captures the cases where the input number was prime as well as making sure the final prime factor is added to the list
+
+### CHALLENGE 2 - Find Palindromes
+
