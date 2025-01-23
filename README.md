@@ -20,7 +20,8 @@ This is my notes and process for completing the LinkedIn Learning learning path 
     * [CHAPTER 1 - Object-Oriented Programming](#chapter-1---object-oriented-python)
     * [CHAPTER 2 - Inheritance and Composition](#chapter-2---inheritance-and-compositions)
     * [CHAPTER 3 - "Magic" Object Methods](#chapter-3---magic-object-method)
-    * [CHAPTER 4 - Data Classes]
+    * [CHAPTER 4 - Data Classes](#chapter-4---data-classes)
+* [Level Up: Python](#level-up-python)
 
 ## Python Essential Training <a name="essentials"></a>
 This is my repository for the LinkedIn Learning course `Python Essential Training`. The full course is available from [LinkedIn Learning][lil-course-url]. I will be committing my projects and code samples from the course to this repository.
@@ -95,6 +96,8 @@ The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/mai
 
 ### CHAPTER 11 - Packaging Python
 
+***
+
 ## Python Object-Oriented Programming <a name="py_oop"></a>
 This is the repository for the LinkedIn Learning course Python Object-Oriented Programming. The full course is available from [LinkedIn Learning][lil-course-url].
 
@@ -153,3 +156,24 @@ The [coding challenge](https://github.com/saxton-chris/LinkedInPythonCert/tree/m
 The instructor defines "magic" object methods as built in functions for Python that a class can override to make the class easier to work with. the first functions we looked at were the `__str__` and `__repr__` functions. These allow for two different ways to represent the class. The `str()` function is more commonly used for friendlier and user readable strings where the `repr()` function is used to provide information to developers. The latter is commonly used in debugging code. The next section was learnig the use of the `__eq__`(==), `__ge__`(>=), and `__lt__`(<) functions. These are used to compare two objects of the same type together and can be used to sort the objects as well. Then we moved on to `__getattribute__`, `__setattr__`, and `__getattr__`. These control how developer can get or set attributes for the class. The `__getattr__` is used if the attribute doesn't exist or the `__getattribute__` function raises an exception. The developer needs to becareful when implementing these functions to avoid an infinite recursive loop. Finally, we looked at, and implemented the `__call__` function. This allows developer to directly call the object as a function instead of having to use the dot notation.
 
 The [coding challenge](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_03) was further extending the previous `Asset`, `Stock`, and `Bond` classes. The task was to implement the `__str__` function, which as added as an `abstractmethod` to the `Asset` class, to allow the user to cleanly print the object. And then implement the `__lt__` method to allow for sorting a list of objects.
+
+### CHAPTER 4 - Data Classes
+The last chatpter was on data classes, as the header says. I learned how to import the dataclasses packaage and the benefits that it can bring by implementing certain instance methods be default like, `__init__`, `__eq__`, and `__repr__`. I then learned how to set defaults for instance attributes and make the class immutable.
+
+The [coding challenge](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Object-Oriented_Programming/My_Work/Chapter_04) continued to add on to the `Asset`, `Stock`, and `Bond` classes from before by making them `dataclasses`. 
+
+***
+
+## Level Up: Python 
+This is the repository for the LinkedIn Learning course Level Up: Python. The full course is available from [LinkedIn Learning][lil-course-url].
+
+Want to test your Python skills? These concise challenges let you stretch your brain and test your talents. Instructor Barron Stone shares over a dozen Python challenges, as well as his own solutions to each problem—the majority of which are less than two dozen lines of code. The challenges include finding prime factors, sorting strings, scheduling a function, solving a sudoku, and more. You can tackle each problem using the tools in the Python standard library, or opt for the library of your choice. And since each challenge is self-contained, you can complete the course in any order—and at your own pace. Tune in to get the hands-on practice you need to level up your skills.<br><br>This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. <br><br>Each installment of the <em>Level Up</em> series offers at least 15 bite-sized opportunities to practice programming at various levels of difficulty, so you can challenge yourself and reinforce what you’ve learned.
+
+### Instructor
+
+Barron Stone
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/barron-stone).
+
+[lil-course-url]: https://www.linkedin.com/learning/level-up-python
+
