@@ -8,42 +8,32 @@ def prime_factors(num):
     Returns:
     list: A list of prime factors of the input number in ascending order.
           If the input is not an integer, returns an error message.
-
-    Examples:
-    >>> prime_factors(630)
-    [2, 3, 3, 5, 7]
-    >>> prime_factors(13)
-    [13]
-    >>> prime_factors(843533272)
-    [2, 2, 2, 19, 5549561]
-    >>> prime_factors(843727)
-    [17, 31, 1601]
     """
-    # Initialize an empty list to store the prime factors
-    factors = []
-
-    # Input validation: Ensure the input is an integer
-    if type(num) != int:
+    # Validate input type
+    if not isinstance(num, int):
         return 'Not an integer. Must pass in an integer!'
 
-    # Remove all factors of 2 (the only even prime number)
-    while num % 2 == 0:
-        factors.append(2)
-        num = num // 2  # Divide by 2 and update the number
+    # Early exit for trivial cases
+    if num < 2:
+        return []
 
-    # Start checking odd numbers from 3 onwards
-    div = 3
-    while div * div <= num:  # Only check divisors up to the square root of num
-        while num % div == 0:  # Continue dividing as long as div is a factor
-            factors.append(div)  # Add the divisor to the list of factors
-            num = num // div  # Update num by dividing it by div
-        div += 2  # Increment the divisor by 2 (skip even numbers)
+    factors = []
+    div = 2  # Start with the smallest prime number
+    
+    # Loop to check all divisors
+    while div * div <= num:
+        while num % div == 0:  # If div divides num, add to factors
+            factors.append(div)
+            num //= div
+        if div == 2:  # After checking 2, skip to odd numbers
+            div = 3
+        else:
+            div += 2
 
     # If the remaining number is greater than 1, it must be a prime factor
     if num > 1:
         factors.append(num)
 
-    # Return the complete list of prime factors
     return factors
 
 # Example test cases to validate the function
