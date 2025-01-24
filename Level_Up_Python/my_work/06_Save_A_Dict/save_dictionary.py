@@ -53,11 +53,11 @@ if __name__ == '__main__':
     }
 
     # Save the dictionaries to files using the save_file function
-    save_file('large.pickle', large_dict)
-    save_file('medium.pickle', medium_dict)
-    save_file('small.pickle', small_dict)
+    save_file('./large.pickle', large_dict)
+    save_file('./medium.pickle', medium_dict)
+    save_file('./small.pickle', small_dict)
 
     # Load the dictionaries from the files using the load_file function and print them
-    print(load_file("large.pickle"))
-    print(load_file("medium.pickle"))
-    print(load_file("small.pickle"))
+    print(load_file("./large.pickle"))
+    print(load_file("./medium.pickle"))
+    print(load_file("./small.pickle"))
