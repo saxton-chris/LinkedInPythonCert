@@ -12,7 +12,7 @@ This is my notes and process for completing the LinkedIn Learning learning path 
     * [CHAPTER 6 - Functions](#chapter-6---functions)
     * [CHAPTER 7 - Classes and Object](#chapter-7---classes-and-objects)
     * [CHAPTER 8 - Errors](#chapter-8---errors)
-    * [CHAPTER 9 - Threads and Processes](#chapter-9---threads-and-process)
+    * [CHAPTER 9 - Threads and Processes](#chapter-9---threads-and-processes)
     * [CHAPTER 10 - Working with Files](#chapter-10---working-with-files)
     * [CHAPTER 11 - Packaging Python](#chapter-11---packaging-python)
 * [Python Object-Oriented Progamming](#python-object-oriented-programming)
@@ -22,6 +22,12 @@ This is my notes and process for completing the LinkedIn Learning learning path 
     * [CHAPTER 3 - "Magic" Object Methods](#chapter-3---magic-object-method)
     * [CHAPTER 4 - Data Classes](#chapter-4---data-classes)
 * [Level Up: Python](#level-up-python)
+    * [CHALLENGE 1 - Prime Facotorization](#challenge-1---prime-factorization)
+    * [CHALLENGE 2 - Find Palindromes](#challenge-2---find-palindromes)
+    * [CHALLENGE 3 - Sort a String of Words](#challenge-3---sort-a-string-of-words)
+    * [CHALLENGE 4 - Find All Items in List](#challenge-4---find-all-items-in-list)
+    * [CHALLENGE 5 - Waiting Game](#challenge-5---waiting-game)
+    * [CHALLENGE 6 - Save a Dictionary](#challenge-6---save-a-dictionary)
 
 ## Python Essential Training <a name="essentials"></a>
 This is my repository for the LinkedIn Learning course `Python Essential Training`. The full course is available from [LinkedIn Learning][lil-course-url]. I will be committing my projects and code samples from the course to this repository.
@@ -90,11 +96,18 @@ This chapter covered `Errors` and `Exceptions`. In Python `Errors` and `Excpetio
 
 The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_08) was to create a custom `Exception` to handle arguments that aren't integers. It uses a decorator to check that all parameters are integers. If any parameter isn't an integer then it raises a `NotIntArgumentException`.
 
-### CHAPTER 9 - Threads and Process
+### CHAPTER 9 - Threads and Processes
+This chapter went over the basics of threads and processes. The instructor went over the usage of threads and process, as well as how to import the correct packages. Threads within the same process have access to the same memory while two processes don't share memory. Both can be used to speed up run time, but in some cases threads may not be able to run in parallel.
+
+There was no coding challenge for this chapter.
 
 ### CHAPTER 10 - Working with Files
+This chapter was about reading and writing files. I learned how to open a file and different modes it can be opened in. She then went over the process of writing to a file and how to append to the end of a file vs. overwritng a file. She then coverd reading from a file and how you can use that data.
+
+The [coding project](https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Python_Essential_Training/my_work/Chapter_10) was to compress some ASCII art and store it in a file. Then write a second function to decompress and print out the original art. I compressed using using a `bytearray` to make it as small as possible. The ASCII art was compressed to about 25% of its original size.
 
 ### CHAPTER 11 - Packaging Python
+The final chapter covered modules and packages in Python. A package is a group of modules within a common directory. To indicate that a directory is a package you must inlude a `__init__.py` file. You can use `from <module_name> import ...` in a file to import the module you want. You can import the whole module or just the pieces you need.
 
 ***
 
@@ -181,4 +194,14 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 The first coding challenge was to create a function to find the (prime factors)[https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Level_Up_Python/my_work/01_Find_Prime_Factors] of a given number. My solution for this started by trying to divide by 2 as that is the lowest prime number. Once I divided by 2 as many times as I could, then I tried divding by 3, as that is the next prime number. From there, I incrimented the divisor by 2 as I only needed to test odd numbers, up to the square root of the most current value of the reduced number. I also included a couple of safety checks before trying to find prime factors. If the input parameter was not a integer I return a warning message letting the user know that an integer is required. Also, if the number is less than 2, then I am returning an empty list as the number can't have any prime factors. The final check was to see is `num > 1` after the loop finishes executing. If so, that number is prime and must be added to the list. This captures the cases where the input number was prime as well as making sure the final prime factor is added to the list
 
 ### CHALLENGE 2 - Find Palindromes
+The second coding challenge was to determine if a string is a [palindrome]((prime factors)[https://github.com/saxton-chris/LinkedInPythonCert/tree/main/Level_Up_Python/my_work/02_palindrome] ) or not. For this challenge, I repleaced all non-alpha characters with an empty string and then converted them all to lowercase for comparison. The next step was to assign the string to a new variable in reverse order. The return whether the two strings were equal or not.
 
+After building and testing my function, I tried running it through ChatGPT to see if it could be optimized. The result it gave used the `join()` function instead of regex and did the comparison in one step instead of using two separate variables. The new version ran slightly slower in my benchmark testing but the code is more concise and easier to read.
+
+### CHALLENGE 3 - Sort A String of Words
+
+### CHALLENGE 4 - Find All Items in List
+
+### CHALLENGE 5 - Waiting Game
+
+### CHALLENGE 6 - Save a Dictionary

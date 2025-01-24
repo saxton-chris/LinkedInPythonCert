@@ -7,17 +7,15 @@ def waiting_game():
 
     # Inform the user of the target wait time
     print(f"Your target time is {wait_time} seconds")
-    print("---Press Enter---")
     
     # Wait for the user to press Enter to start the timer
-    input()
+    input("---Press Enter---")
     
     # Record the start time using a high-precision timer
     start = time.perf_counter()
 
     # Prompt the user to wait for the target time and press Enter again
-    print(f"\n...Press Enter again after {wait_time} seconds\n")
-    input()  # Wait for the user to press Enter again
+    input(f"\n...Press Enter again after {wait_time} seconds\n")  # Wait for the user to press Enter again
     
     # Calculate the elapsed time since the timer started
     elapsed = time.perf_counter() - start
