@@ -21,7 +21,7 @@ def schedule_function(execution_time, func, *args):
         raise ValueError("execution_time must be a non-negative timestamp.")
     
     # Print a message indicating when the function is scheduled to run
-    print(f"{func.__name__} is scheduled for {time.ctime(execution_time)}")  
+    print(f"{func.__name__}() is scheduled for {time.ctime(execution_time)}")  
     
     # Calculate the delay time in seconds
     delay = execution_time - time.time()
@@ -38,4 +38,4 @@ def schedule_function(execution_time, func, *args):
 
 # Example usage:
 # Schedule the 'print' function to run 60 seconds from now with the argument "Howdy!"
-schedule_function(time.time() + 60, print, "Howdy!")
+schedule_function(time.time() + 10, print, "Howdy!")
