@@ -1,7 +1,7 @@
 import random
 from collections import Counter
 
-def roll_dice(num_simulations, *sides):
+def roll_dice(num_simulations =  1_000_000, *sides):
     """
     Simulates rolling multiple dice a specified number of times and calculates 
     the probabilities of the resulting sums.
@@ -34,4 +34,4 @@ def roll_dice(num_simulations, *sides):
         print(f"{outcome:<8} {probability:.2f}%")
 
 # Example usage: Simulates rolling a 4-sided, 6-sided, 6-sided, 10-sided, and 20-sided die
-roll_dice(1000000000, 4, 6, 6, 10, 20)
+roll_dice(1_000_000, 9, 12, 6, 10)
