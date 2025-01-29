@@ -53,6 +53,19 @@ def solve_sudoku(puzzle: List[List]) -> bool:
             
             puzzle[row][col] = 0
 
+def print_sudoku(sudoku: List[List]) -> None:
+    for row in range(0,9):
+        row_string = ''
+        for col in range (0,9):
+            if sudoku[row][col] == 0:
+                row_string += f' * '
+            else:
+                row_string += f' {sudoku[row][col]} '
+            if col == 2 or col == 5:
+                row_string += ' | '
+        if row == 3 or row == 6:
+            print('---------------------------------')
+        print(row_string)
 
 if __name__ == '__main__':
     puzzle = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
@@ -66,15 +79,13 @@ if __name__ == '__main__':
                 [0, 0, 0, 0, 8, 0, 0, 7, 9]]
 
     print("The original puzzle is:")
-    for row in puzzle:
-        print(row)
+    print_sudoku(puzzle)
 
     solved = solve_sudoku(puzzle)
 
     if solved:
         print("The puzzle was solved!")
-        for row in puzzle:
-            print(row)
+        print_sudoku(puzzle)
 
     else:
         print("Puzzle has no solution")
