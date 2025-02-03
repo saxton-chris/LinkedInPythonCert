@@ -55,9 +55,7 @@ def download_files(start_url, output_directory, max_attempts=100):
         max_attempts -= 1  # Prevent infinite loops if numbering is unclear
 
 # Example usage
-start_url = "http://699340.youcanlearnit.net/image001.jpg"
-output_dir = "./images"
-download_files(start_url, output_dir)
-
 if __name__ == '__main__':
-    download_files('http://699340.youcanlearnit.net/image001.jpg', './images')
+    start_url = "http://699340.youcanlearnit.net/image001.jpg"
+    output_dir = "./images"
+    download_files(start_url, output_dir)
